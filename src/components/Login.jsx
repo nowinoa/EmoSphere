@@ -21,8 +21,10 @@ const Login = () => {
     console.log(visibility)
     console.log(welcome)
     console.log(login)
-    noneDisplay()
+    noneDisplay();
+
   }, [visibility])
+  
   return (
     //Here we have both components landing and logging/ when the button is clicked the state will be true / then the display changes
     //Create a state for when the button is clicked
@@ -39,7 +41,7 @@ const Login = () => {
         <p className="copy">© 2023 Emosphere. All rights reserved. </p>
       </div>
 
-      <div className="login-screen" ref={login}>
+      <div className="login-screen slideIn-right" ref={login}>
         <img src={emoSphere} className="logo" />
         <h2 className="title">Log In</h2>
         <p>
